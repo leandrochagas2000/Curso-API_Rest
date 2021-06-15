@@ -7,6 +7,8 @@ namespace DevIO.API.Controllers
     [ApiController]
     public abstract class MainController : ControllerBase
     {
+        // Inclusao comentario git
+
         // validacao de notificacoes de erro
 
         // validacao de modelState
