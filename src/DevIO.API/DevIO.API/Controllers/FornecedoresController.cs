@@ -19,6 +19,7 @@ namespace DevIO.API.Controllers
         {
             _fornecedorRepository = fornecedorRepository;
             _mapper = mapper;
+            _fornecedorService = fornecedorService;
         }
 
         [HttpGet]
@@ -29,7 +30,7 @@ namespace DevIO.API.Controllers
             return fornecedor;
         }
 
-        [HttpGet("{id:guid")]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<FornecedorViewModel>> ObterPorId(Guid id)
         {
             var fornecedor = await ObterFornecedorProdutosEndereco(id);
